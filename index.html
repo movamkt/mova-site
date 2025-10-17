@@ -1,83 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>MOVA | Consultoria 360° de Performance Humana</title>
-  <meta name="description" content="Consultoria que diagnostica, recomenda e executa soluções para performance humana em vendas, liderança e experiência do cliente.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOVA Consultoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:Inter,Arial,sans-serif; background:#F7F9FA; color:#0F1720; }
-    header { position:sticky; top:0; background:#fff; border-bottom:1px solid #e6edf2; padding:14px 20px; }
-    nav a { margin-right:14px; text-decoration:none; color:#0F1720; font-weight:600; }
-    section { max-width:1000px; margin:0 auto; padding:40px 20px; }
-    h1, h2 { font-family:sans-serif; margin:.2em 0; }
-    .cta { display:inline-block; background:#1FC2C2; color:#fff; padding:10px 16px; border-radius:10px; text-decoration:none; }
-    .grid { display:grid; gap:14px; }
-    @media(min-width:760px) {
-      .g3 { grid-template-columns:repeat(3,1fr); }
-      .g5 { grid-template-columns:repeat(5,1fr); }
+    :root {
+      --bg: #f9f7f2; /* off-white / creme */
+      --title: #38b2ac; /* turquesa médio/claro */
+      --subtitle: #2c7a7b; /* turquesa escuro */
+      --text: #333333; /* cinza escuro */
+      --accent: #ff6b6b; /* rosa coral */
     }
-    .card { background:#fff; border:1px solid #e6edf2; border-radius:12px; padding:16px; }
-    .wa { position:fixed; right:18px; bottom:18px; background:#25D366; color:#fff; padding:12px 16px; border-radius:30px; text-decoration:none; font-weight:700; }
-    footer { background:#fff; border-top:1px solid #e6edf2; padding:20px; text-align:center; margin-top:40px; }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', 'Comfortaa', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      color: var(--title);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--subtitle);
+      font-size: 1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      background-color: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    h2 {
+      color: var(--title);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      color: var(--subtitle);
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    a.button-link {
+      text-decoration: none;
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
   </style>
 </head>
 <body>
 
-<header><nav>
-  <a href="#solucoes">Soluções</a>
-  <a href="#metodo">MOVA 360°</a>
-  <a href="#pacotes">Pacotes</a>
-  <a href="#contato">Contato</a>
-</nav></header>
+  <header>
+    <h1>Análise dos canais de vendas, cardápio de possibilidades,<br>execução com métricas</h1>
+    <p>Estratégias para melhorar a performance: diagnósticos, treinamentos, trade marketing, eventos, gamificação 100% adaptado.</p>
+    <a class="btn" href="#solucoes">Ver soluções</a>
+  </header>
 
-<section>
-  <h1>Análise dos canais de vendas, cardápio de possibilidades, execução com métricas</h1>
-  <p>Estratégias para melhorar a performance: diagnósticos, treinamentos, trade marketing, eventos, gamificação 100% adaptado.</p>
-  <a class="cta" href="#solucoes">Ver soluções</a>
-</section>
+  <section id="solucoes">
+    <h2>Soluções Personalizadas</h2>
+    <div class="grid">
+      <div class="card"><h3>📊 Estratégia</h3><p>Diagnóstico, cliente oculto, análise de performance e plano de ação.</p></div>
+      <div class="card"><h3>🎯 Treinamento</h3><p>Vendas, liderança, multiplicadores e reforço contínuo.</p></div>
+      <div class="card"><h3>🛒 Trade Marketing</h3><p>Ativações, auditoria de execução, materiais e incentivo.</p></div>
+      <div class="card"><h3>🎥 Evento</h3><p>Presenciais, híbridos, roteiros, trilhas, audiovisual e experiência.</p></div>
+      <div class="card"><h3>🏆 Gamificação</h3><p>Engajamento com rankings, quizzes e jornadas personalizadas.</p></div>
+    </div>
+  </section>
 
-<section id="solucoes">
-  <h2>Soluções Personalizadas</h2>
-  <div class="grid g5">
-    <div class="card"><h3>Estratégia</h3><p>Diagnóstico, cliente oculto, análise de performance e plano de ação.</p></div>
-    <div class="card"><h3>Treinamento</h3><p>Vendas, liderança, multiplicadores e reforço contínuo.</p></div>
-    <div class="card"><h3>Trade Marketing</h3><p>Ativações, auditoria de execução, materiais e incentivo.</p></div>
-    <div class="card"><h3>Evento</h3><p>Presenciais, híbridos, roteiros, trilhas, audiovisual e experiência.</p></div>
-    <div class="card"><h3>Gamificação</h3><p>Engajamento com rankings, quizzes e jornadas personalizadas.</p></div>
-  </div>
-</section>
+  <section id="metodo">
+    <h2>MOVA 360°</h2>
+    <div class="grid">
+      <div class="card"><h3>Diagnostica</h3><p>Leitura de contexto e dados reais.</p></div>
+      <div class="card"><h3>Recomenda</h3><p>Roteiro e arquitetura de mudança.</p></div>
+      <div class="card"><h3>Executa</h3><p>Entrega e acompanhamento mensurável.</p></div>
+    </div>
+  </section>
 
-<section id="metodo">
-  <h2>MOVA 360°</h2>
-  <div class="grid g3">
-    <div class="card"><h3>Diagnostica</h3><p>Leitura de contexto e dados reais.</p></div>
-    <div class="card"><h3>Recomenda</h3><p>Roteiro e arquitetura de mudança.</p></div>
-    <div class="card"><h3>Executa</h3><p>Entrega e acompanhamento mensurável.</p></div>
-  </div>
-</section>
+  <section id="pacotes">
+    <h2>Pacotes MOVA</h2>
+    <div class="grid">
+      <div class="card"><h3>Essencial</h3><p>Diagnóstico e plano de ação.<br><strong>Consulte Valores Personalizados</strong></p></div>
+      <div class="card"><h3>Estratégico</h3><p>+ Treinamentos e trade mkt.<br><strong>Presencial e on-line, para todo o Brasil!</strong></p></div>
+      <div class="card"><h3>360° Completo</h3><p>+ Execução e Gestão de Performance<br><strong>Sob proposta</strong></p></div>
+    </div>
+  </section>
 
-<section id="pacotes">
-  <h2>Pacotes MOVA</h2>
-  <div class="grid g3">
-    <div class="card"><h3>Essencial</h3><p>Diagnóstico e plano de ação.</p><p><b>Consulte Valores Personalizados</b></p></div>
-    <div class="card"><h3>Estratégico</h3><p>+ Treinamentos e trade mkt.</p><p><b>Presencial e on-line, para todo o Brasil!</b></p></div>
-    <div class="card"><h3>360° Completo</h3><p>+ Execução e Gestão de Performance</p><p><b>Sob proposta</b></p></div>
-  </div>
-</section>
+  <section id="contato">
+    <h2>Fale com a MOVA</h2>
+    <p>Vamos desenhar a melhor estratégia junto com você. Envie sua mensagem!</p>
+    <a class="button-link" href="https://wa.me/5511991436396">WhatsApp</a>
+    <a class="button-link" href="mailto:contato@movamkt.com">E-mail</a>
+  </section>
 
-<section id="contato">
-  <h2>Fale com a MOVA</h2>
-  <p>Vamos desenhar a melhor estratégia junto com você. Envie sua mensagem!</p>
-  <p>
-    <a class="cta" href="https://wa.me/5511991436396?text=Olá%20MOVA,%20quero%20saber%20mais!.">WhatsApp</a>
-    <a class="cta" href="mailto:bianca.daenekas@movatrademkt.com.br?subject=MOVA%20Consultoria%20360">E-mail</a>
-  </p>
-</section>
+  <footer>
+    © <span id="yr"></span> MOVA Consultoria — Diagnostica → Recomenda → Executa
+  </footer>
 
-<footer>© <span id="yr"></span> MOVA Consultoria — Diagnostica → Recomenda → Executa</footer>
-<a class="wa" href="https://wa.me/5511991436396?text=Olá%20MOVA,%20quero%20saber%20mais!">WhatsApp</a>
-<script>document.getElementById("yr").textContent = new Date().getFullYear()</script>
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
